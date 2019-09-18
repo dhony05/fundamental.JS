@@ -13,6 +13,7 @@ var jonh =
   family:['Juanito','Dany','Daniela'],
   isMarried: false,
   job: 'programmer'
+  
 };
 
 console.log(jonh.fullName);
@@ -29,3 +30,24 @@ dhony.lastname = 'Familia';
 dhony.isMarried = false;
 
 console.log(dhony);
+
+
+// you can even enter fuctions inside objects 
+let dhonyObject  = 
+{
+  firstName :"Donelys",
+  lastName  : "Familia",
+  birthYear : 1994,
+  isMarried :false,
+  gender    : "M",
+  calcAge   : function(birthYear){
+    return 2019 - this.birthYear;
+  },
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+  
+
+};
+
+console.log(dhonyObject.fullName() + " is " +  dhonyObject.calcAge() + " years old.")
