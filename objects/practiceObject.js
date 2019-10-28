@@ -51,3 +51,5 @@ let dhonyObject  =
 };
 
 console.log(dhonyObject.fullName() + " is " +  dhonyObject.calcAge() + " years old.")
+
+
